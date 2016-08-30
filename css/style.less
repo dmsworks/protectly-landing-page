@@ -1,0 +1,445 @@
+/* Цвета */
+
+@c-blue: #3498db;
+@c-link: #d1e3f5;
+@c-darkerblue: #1f6ca0;
+@c-line: #eaeaeb;
+@c-h1gray: #484847;
+@c-pgray: #8d8d8d;
+@c-linkblue: #008dd0;
+@c-linkblue-hover: #3399cc;
+
+
+/* глобальное */
+
+body, html {
+    margin: 0;
+    overflow: hidden;
+    height: 5000px;
+}
+img {
+    border: 0;
+}
+
+.clear {
+    clear: both;
+}
+
+.line {
+    width: 100%;
+    min-wdth: 992px;
+    border-bottom: 1px solid @c-line;
+}
+
+@font-face {
+    font-family: "ProximaNovaRegular";
+    src: url("../fonts/ProximaNovaRegular/ProximaNovaRegular.eot");
+    src: url("../fonts/ProximaNovaRegular/ProximaNovaRegular.eot?#iefix")format("embedded-opentype"),
+    url("../fonts/ProximaNovaRegular/ProximaNovaRegular.woff") format("woff"),
+    url("../fonts/ProximaNovaRegular/ProximaNovaRegular.ttf") format("truetype");
+    font-style: normal;
+    font-weight: normal;
+}
+
+@font-face {
+    font-family: "ProximaNovaBold";
+    src: url("../fonts/ProximaNovaBold/ProximaNovaBold.eot");
+    src: url("../fonts/ProximaNovaBold/ProximaNovaBold.eot?#iefix")format("embedded-opentype"),
+    url("../fonts/ProximaNovaBold/ProximaNovaBold.woff") format("woff"),
+    url("../fonts/ProximaNovaBold/ProximaNovaBold.ttf") format("truetype");
+    font-style: normal;
+    font-weight: normal;
+}
+
+/* Шапка */
+
+.header {
+    display: block;
+}
+
+.h-wrapper{
+    width: 100%;
+    min-width: 992px;
+    height: 682px;
+    background: @c-blue url(../img/clouds_bg.png) bottom repeat-x;
+    background-size: contain;
+}
+
+.h-center-wrapper {
+    width: 992px;
+    height: 99px;
+    margin: 0 auto;
+}
+
+.h-header-bar {
+    width: 992px;
+    height: 73px;
+    padding-top: 27px;
+}
+
+.h-logo {
+    float: left;
+    width: 155px;
+    height: 53px;
+    margin-left: -2px;
+    background: url(../img/shield_logo.png) no-repeat;
+}
+
+.h-logo-img {
+    display: block;
+    float: left;
+    width: 47px;
+    height: 53px; 
+}
+
+.h-logo-txt {
+    display: inline-block;
+    width: 96px;
+    height: 19px;
+    margin-top: 14px;
+    margin-left: 7px;
+    font-family: "Asap", "Arial", sans-serif;
+    font-size: 24px;
+    font-weight: 700;
+    text-decoration: none;
+    line-height: 24px;
+    color: white;
+}
+
+.h-logo a:hover, .h-logo-txt.hover {
+    color: whitesmoke
+}
+
+.top-menu {
+    float: left;
+    width: 308px;
+    margin-top: 16px;
+    margin-left: 64px;
+}
+
+.top-menu ul {
+    margin: 0;
+    padding: 0;
+    display: inline-block;
+    list-style: none
+}
+
+.top-menu li {
+    display: table-cell;
+    padding-right: 28px; 
+}
+
+.top-menu li a {
+    font-family: "ProximaNovaRegular", sans-serif;
+    font-size: 15px;
+    text-decoration: none;
+    color: @c-link;
+}
+
+.top-menu li a:hover {
+    color: white;
+}
+
+.top-call {
+    float: right;
+    width: 154px;
+    height: 16px;
+    margin-top: 19px;
+    font-family: "ProximaNovaBold", sans-serif;
+    font-size: 15px;
+    text-decoration: none;
+    text-align: right;
+    line-height: 0.9;
+    color: @c-link; 
+    background: url(../img/phone_icon.png) no-repeat;
+}
+
+.h-wrapper-2{
+    width: 100%;
+    min-width: 992px;
+    height: 583px;
+    background: url(../img/laptop.png) no-repeat center center;
+    background-size: cover;
+}
+
+.h-projector{
+    width: 992px;
+    margin: 0 auto;
+}
+
+.projector-txt{
+    float: left;
+    width: 420px;
+    height: 90px;
+    margin-top: 165px;
+    font-family: "ProximaNovaBold", sans-serif;
+    font-size: 35px;
+    text-align: left;
+    line-height: 1.5;
+    color: white;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+.try-btn {
+    float: left;
+    display: block;
+    width: 170px;
+    height: 36px;
+    margin-top: 62px;
+    padding-top: 14px;
+    border-radius: 5px;
+    font-family: "ProximaNovaBold", sans-serif;
+    font-size: 16px;
+    text-align: center;
+    text-decoration: none;
+    background: @c-darkerblue;
+    color: white;
+}
+
+.try-btn:hover {
+    box-shadow: 0 0 3px rgba(0, 0, 0, 0.8);
+}
+
+.video-btn {
+    display: inline-block;
+    width: 145px;
+    height: 23px;
+    margin-top: 76px;
+    margin-left: 30px;
+    background: url(../img/play_btn.png) no-repeat;
+    color: white;
+    font-family: "ProximaNovaRegular", sans-serif;
+    font-size: 15px;
+    text-align: right;
+    line-height: 1.5;
+}
+
+.video-btn:hover {
+    text-decoration: none;
+    color: @c-link;
+}
+
+/* Слайдер */
+
+.slider-wrapper{
+    width: 992px;
+    height: 453px;
+    margin: 0 auto;
+}
+
+.slider-top {
+    width: 992px;
+    height: 136px;
+    margin-top: 60px;
+    margin-top: 60px;
+    background: #ccc;
+    background: white url(../img/st-logos.png) no-repeat -1px -1px;
+}
+
+.slider-top, slider-1, slider-2{
+    list-style: none;
+    padding: 0px;
+    margin: 0px;
+    margin-top: 60px;
+}
+
+.slider-wrapper ul li{
+    display: table-cell;
+
+}
+
+.slider-top li {
+    width: 165px;
+    height: 91px;
+    overflow: hidden;
+}
+
+#tl-active {
+    background: none !important;
+}
+
+.tl-1 {
+    display: block;
+    width: 116px;
+    height: 40px;
+    position: relative;
+    top: -10px;
+    background: white;
+    opacity: 0.4;
+}
+
+.tl-1.hover {
+    background: none;
+}
+
+.tl-2 {
+    display: block;
+    width: 116px;
+    height: 40px;
+    position: relative;
+    top: -5px;
+    margin-left: 8px;
+    background: white;
+    opacity: 0.4;
+}
+
+.tl-2.hover {
+    background: none;
+}
+
+.tl-3 {
+    display: block;
+    width: 116px;
+    height: 35px;
+    position: relative;
+    top: -10px;
+    margin-left: 18px;
+    background: white;
+    opacity: 0.4;
+}
+
+.tl-3.hover {
+    background: none;
+}
+
+.tl-4 {
+    display: block;
+    width: 116px;
+    height: 55px;
+    position: relative;
+    margin-left: 30px;
+    background: white;
+    opacity: 0.4;
+}
+
+.tl-4.hover {
+    background: none;
+}
+
+.tl-5 {
+    display: block;
+    width: 100px;
+    height: 80px;
+    position: relative;
+    top: 20px;
+    margin-left: 50px;
+    background: white;
+    opacity: 0.4;
+}
+
+.tl-5.hover {
+    background: none;
+}
+
+.tl-6 {
+    display: block;
+    width: 105px;
+    height: 45px;
+    position: relative;
+    margin-left: 55px;
+    background: white;
+    opacity: 0.4;
+}
+
+.tl-6.hover {
+    background: none;
+}
+
+.b-left {
+    float: left;
+    width: 24px;
+    height: 317px; 
+}
+
+.b-left-a {
+    display: block;
+    width: 24px;
+    height: 38px;
+    margin-top: 113px;
+    background: url(../img/slider_left.png) no-repeat left 0;
+}
+
+.b-left-a:hover {
+    background: url(../img/slider_left.png) no-repeat left -39px;
+}
+
+.slider-1 {
+    display: inline-block;
+    padding: 0px;
+    margin: 0px;
+    height: 317px;
+    width: 944px;
+}
+
+.slider-1 h1 {
+    font-family: "ProximaNovaRegular", sans-serif;
+    font-size: 20px;
+    text-align: center;
+    color: @c-h1gray; 
+}
+
+.sl-p {
+    margin-top: 45px;
+    margin-bottom: 0px;
+    font-family: "ProximaNovaRegular", sans-serif;
+    font-size: 16px;
+    text-align: center;
+    line-height: 1.5;
+    font-style: italic;
+    color: @c-pgray;   
+}
+
+.slider-sign  {
+    margin-top: 40px;
+    font-family: "ProximaNovaRegular", sans-serif;
+    font-size: 15px;
+    text-align: center;
+    line-height: 1.5;
+    font-style: italic;
+    color: @c-pgray;   
+}
+
+.slider-sign a {
+    font-family: "ProximaNovaRegular", sans-serif;
+    font-size: 15px;
+    text-align: center;
+    line-height: 1.5;
+    font-style: italic;
+    text-decoration: none;
+    color: @c-linkblue;  
+    
+}
+
+.slider-sign a:hover {
+    text-decoration: underline;
+    color: @c-linkblue-hover;
+}
+
+.b-right {
+    float: right;
+    width: 24px;
+    height: 317px;
+    color: @c-linkblue;
+}
+
+.b-right-a {
+    display: block;
+    width: 24px;
+    height: 38px;
+    margin-top: 113px;
+    background: url(../img/slider_right.png) no-repeat left 0;
+}
+
+.b-right-a:hover {
+    background: url(../img/slider_right.png) no-repeat left -39px;
+}
+
+/* Контент */
+
+.content {
+    width: 992px;
+    height: 708px;
+    margin: 0 auto;
+    background: #f5f5f5 url(../img/footer_icon.png) no-repeat 0 bottom;
+}
